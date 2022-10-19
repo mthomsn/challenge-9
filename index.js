@@ -1,53 +1,54 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
+const generateMarkdown = require('./utils/generateMarkdown');
 // TODO: Create an array of questions for user input
 const questions = [
   {
     type: 'input',
     message: 'What is the title of your project?',
-    name: 'projectTitle',
+    name: 'title',
   },
   {
     type: 'input',
     message: 'Please give a brief description of your application:',
-    name: 'projectDescription',
+    name: 'description',
   },
   {
     type: 'input',
     message: 'How do you install your application?',
-    name: 'projectInstall',
+    name: 'install',
   },
   {
     type: 'input',
     message: 'How do you use your application?',
-    name: 'projectUsage',
+    name: 'usage',
   },
   {
     type: 'input',
     message: 'What are the contribution guidelines?',
-    name: 'projectContribution',
+    name: 'contribution',
   },
   {
     type: 'input',
     message: 'How do you test your application?',
-    name: 'projectTestIns',
+    name: 'testInstruction',
   },
   {
     type: 'input',
     message: 'What is your GitHub username?',
-    name: 'projectGitHub',
+    name: 'username',
   },
   {
     type: 'input',
     message: 'What is your email?',
-    name: 'projectEmail',
+    name: 'email',
   },
   {
     type: 'list',
     message: 'What license does your project have?',
     choices: ['MIT', 'Apache-2.0', 'GNU General Public License (GPL)', 'Berkeley Software Distribution License (BSD)', 'Internet Systems Consortium License (ISC)'],
-    name: 'projectLicense',
+    name: 'license',
   }
 ];
 
@@ -56,7 +57,12 @@ function writeToFile(fileName, data) {}
 
 // TODO: Create a function to initialize app
 function init() {
-  console.log('working');
+  inquirer
+    .prompt(questions)
+    .then((response) => {
+      console.log(response)
+      generateMarkdown(response)
+    })
 }
 
 // Function call to initialize app
