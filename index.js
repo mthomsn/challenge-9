@@ -60,8 +60,10 @@ function init() {
   inquirer
     .prompt(questions)
     .then((response) => {
-      console.log(response)
-      generateMarkdown(response)
+      // console.log(response)
+      fs.writeFile("README.md", generateMarkdown(response), (err) =>
+        err ? console.log(err) : console.log("Done")
+      );
     })
 }
 
