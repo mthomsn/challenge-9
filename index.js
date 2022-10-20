@@ -47,7 +47,7 @@ const questions = [
   {
     type: 'list',
     message: 'What license does your project have?',
-    choices: ['MIT', 'Apache-2.0', 'GNU General Public License (GPL)', 'Berkeley Software Distribution License (BSD)', 'Internet Systems Consortium License (ISC)'],
+    choices: ['MIT', 'Apache-2.0', 'MPL-2.0', ],
     name: 'license',
   }
 ];
