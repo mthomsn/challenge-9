@@ -50,8 +50,8 @@ function generateMarkdown(data) {
   ${renderLicenseSection(data.license)}
 
   ## Questions
-  ${data.username}
-  ${data.email}
+  GitHub: ${data.username}
+  Email: ${data.email}
   `;
 }
 
