@@ -1,32 +1,34 @@
 
-  # README Generator
-  # ![license](https://img.shields.io/badge/License-mit-f39f37)
+  # Example
+  # ![license](https://img.shields.io/badge/License-mpl2.0-f39f37)
 
   ## Description
-  a small application to generate a README.md using node.js
+  Test
+
+  ![test](example.gif)
 
   ## Table of Contents
   - [Installation](#installation)
   - [Usage](#usage)
   - [Contribution](#contribution)
-  - [mit](https://choosealicense.com/licenses/mit)
+  - [mpl-2.0](https://choosealicense.com/licenses/mpl-2.0)
 
   ## Installation
-  download zip file from GitHub
+  test
 
   ## Usage
-  open integrated terminal and use node to run file
+  test
 
   ## Contribution
-  n/a
+  test
 
   ## Testing
-  n/a
+  test
 
   ## License
-  [mit](https://choosealicense.com/licenses/mit)
+  [mpl-2.0](https://choosealicense.com/licenses/mpl-2.0)
 
   ## Questions
-  mthomsn
-  matthewthomsen99@gmail.com
+  GitHub: test
+  Email: test
   
